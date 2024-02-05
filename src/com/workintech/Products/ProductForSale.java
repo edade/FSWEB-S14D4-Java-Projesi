@@ -1,3 +1,5 @@
+package com.workintech.Products;
+
 public abstract class  ProductForSale {
     private String type;
     private  double price;
@@ -26,4 +28,13 @@ public abstract class  ProductForSale {
     }
 
     public abstract void showDetails();
+
+    @Override
+    public String toString() {
+        return "com.workintech.Products.ProductForSale{" +
+                "type='" + type + '\'' +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }
